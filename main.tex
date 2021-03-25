@@ -1,7 +1,7 @@
 %!TEX program = xelatex
-\documentclass[cs4size,punct]{ctexart}
+\documentclass[cs4size,punct,twoside]{ctexart}
 \usepackage{titling}
-\usepackage[a4paper, left=30mm, right=20mm, top=35mm, bottom=25mm, headheight=20pt]{geometry}
+\usepackage[a4paper, left=30mm, right=20mm, top=30mm, bottom=25mm, headheight=21pt]{geometry}
 \usepackage{fancyhdr, graphicx, xpatch, layout}
 \usepackage{booktabs}
 \usepackage{amsmath}
@@ -19,7 +19,8 @@
 \usepackage[square, numbers, sort, comma]{natbib}
 \usepackage{lmodern}
 \usepackage{indentfirst}
- 
+\usepackage{booktabs}
+
 % 参考文献行间距
 \setlength{\bibsep}{-1pt}
 
@@ -47,21 +48,18 @@
 \setlist[enumerate,2]{label=（\arabic*）\ , wide, labelsep=0em, itemsep=0ex, topsep=0pt, partopsep=0pt, parsep=0pt}
 
 \pagenumbering{Roman} %目录页码为罗马数字
-%页眉
-\pagestyle{fancy}
-\lhead{	\setlength{\unitlength}{1mm}
-        \begin{picture}(0,0)
-        \put(0,0){\includegraphics[height=1.7cm]{images/logo.pdf}}
-        \end{picture}
-}
 
-\chead{\zihao{-3}\heiti 东北大学秦皇岛分校毕业设计（论文）} %\bfseries 不用加粗
-\rhead{\zihao{-4}第{\thepage}页}
+%页眉页脚
+\setlength{\voffset}{3pt}
+
+\pagestyle{fancy}
+\lhead{}
+\chead{\zihao{4}\heiti 东北大学秦皇岛分校本科生毕业设计（论文）} %\bfseries 不用加粗
+
 \lfoot{}
-\cfoot{}
+\cfoot{\zihao{5}\thepage}
 \rfoot{}
 \renewcommand{\headrulewidth}{0.4pt}
-%%%页眉
 
 %% lstlisting 样式
 \def\inline{\lstinline[basicstyle=\ttfamily,breaklines=true]}
@@ -92,7 +90,7 @@
 \Crefname{figure}{图}{图}
 
 \include{sections/cover}
-
+\setcounter{page}{1}
 \include{sections/abstract}
 
 \include{sections/toc}

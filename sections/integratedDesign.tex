@@ -61,12 +61,13 @@
 	
 		\begin{table}[H]
 		\centering
-		\caption{User 用户表}
+		\caption{\ \ User 用户表}
 		\zihao{5}
 		\label{tab:db_table_user}
 		\begin{tabular}{p{0.21\textwidth}p{0.21\textwidth}p{0.21\textwidth}p{0.21\textwidth}}
-		\hline
-		字段          & 数据类型         & 字段含义   & 约束条件     \\ \hline
+		\toprule[1.5pt]
+		字段          & 数据类型         & 字段含义   & 约束条件     \\ 
+		\midrule[0.75pt]
 		id          & INT(11)      & 用户ID & 主键、非空、自增 \\
 		im\_id      & VARCHAR(256) & 环信ID & 唯一       \\ 
 		account     & VARCHAR(45)  & 用户名  & 唯一       \\ 
@@ -77,7 +78,8 @@
 		sex         & INT(11)      & 性别   & 无        \\ 
 		signature   & VARCHAR(512) & 签名   & 无        \\
 		avatar      & VARCHAR(256) & 头像   & 无        \\
-		is\_deleted & TINYINT(4)   & 删除标志 & 无        \\ \hline
+		is\_deleted & TINYINT(4)   & 删除标志 & 无        \\ 
+		\bottomrule[1.5pt]
 		\end{tabular}
 		\end{table}
 		
