@@ -1,6 +1,8 @@
 
 # LaTex模板
-[东北大学秦皇岛分校](http://www.neuq.edu.cn/) 本科毕业论文 [LaTex](https://www.latex-project.org/) 模板，模板来自一位学长 `coffin`，在完成毕业论文的过程中，深刻体验到 LaTex 排版的干净整洁，以及修改格式的方便快捷，特此分享出来。
+[东北大学秦皇岛分校](http://www.neuq.edu.cn/) 2019年本科毕业论文 [LaTex](https://www.latex-project.org/) 模板，根据2019年毕设doc文档修改而来。初次修改，可能还存在不符合毕设要求的地方，欢迎提出意见和改进建议。
+
+原模板来自一位学长 `coffin`，在完成毕业论文的过程中，深刻体验到 LaTex 排版的干净整洁，以及修改格式的方便快捷，特此分享出来。
 
 <!-- more -->
 
@@ -11,13 +13,13 @@ LaTeX， 是一种基于TEX的排版系统，由美国电脑学家莱斯利·兰
 
 简单点说：LaTeX 基于 TeX，主要目的是为了方便排版。在学术界的论文，尤其是数学、计算机等学科论文都是由 LaTeX 编写, 因为用它写数学公式非常漂亮。
 
-#### 项目地址
+#### 项目原地址
 
 [GitHub](https://github.com/techflowing/PaperLaTexTemplate)
 
 #### 项目结构
 
-* `images/`，存放论文中引用的图片资源
+* `images/`，存放论文中引用的图片资源,包括论文封面
 * `other/`，存放一些其它资源，比如图标源文件等
 * `sections/`，存放论文每一章的LaTex源文件
 * `citation.bib`，论文引用文献数据
@@ -26,11 +28,10 @@ LaTeX， 是一种基于TEX的排版系统，由美国电脑学家莱斯利·兰
 
 #### LaTex环境
 
-> 基于 macOS 系统，其它系统请自行寻找编辑器，配置环境
+> 基于 Windows10 系统，其它系统请自行寻找编辑器，配置环境
 
-编辑器：[Texpad](https://www.texpad.com/)
+编辑器：[Visual Studio Code](https://code.visualstudio.com/)
 
-Tex发行版：[MacTeX-2017](https://www.tug.org/mactex/mactex-download.html)
-
+Tex发行版：[CTex](http://www.ctex.org/HomePage)
 
 
